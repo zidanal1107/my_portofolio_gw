@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Informatika | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --yellow: #FFD43F;
+            --black: #1A1A1A;
+            --white: #FFFFFF;
+            --bg: #FDFCF0; /* Warna krem lembut khas Neo-brutalism */
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--bg);
+            color: var(--black);
+        }
+        .code-font { font-family: 'Fira Code', monospace; }
+        
+        /* Efek klik menekan tombol khas Neo-brutalism */
+        .btn-press:active {
+            transform: translate(3px, 3px);
+            box-shadow: 2px 2px 0px var(--black);
+        }
+    </style>
+</head>
+<body class="selection:bg-[#1A1A1A] selection:text-white antialiased min-h-screen flex flex-col">
+
+    <nav class="sticky top-0 z-50 bg-white border-b-4 border-[#1A1A1A] px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="font-extrabold text-2xl tracking-tighter uppercase">
+                DEV<span class="bg-[#FFD43F] px-2 py-0.5 border-2 border-[#1A1A1A] ml-1 rounded-xl">PORTFOLIO</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-bold text-sm uppercase tracking-wider">
+                <a href="#about" class="hover:underline decoration-4 decoration-[#FFD43F] underline-offset-4">Tentang</a>
+                <a href="#skills" class="hover:underline decoration-4 decoration-[#FFD43F] underline-offset-4">Skill</a>
+                <a href="#projects" class="hover:underline decoration-4 decoration-[#FFD43F] underline-offset-4">Proyek</a>
+                <a href="#contact" class="bg-[#1A1A1A] text-white px-5 py-2.5 border-2 border-[#1A1A1A] hover:bg-[#FFD43F] hover:text-[#1A1A1A] transition-colors font-black rounded-xl">Kontak Saya</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto px-6 py-12 space-y-32">
+        
+        <header id="hero" class="grid lg:grid-cols-12 gap-12 items-center pt-6">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-block bg-[#FFD43F] border-2 border-[#1A1A1A] px-4 py-1.5 font-bold text-xs uppercase tracking-wider rounded-full shadow-[3px_3px_0px_#1A1A1A]">
+                    🚀 Mahasiswa Informatika & Developer
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight text-[#1A1A1A]">
+                    Membangun Solusi Digital dengan <span class="bg-white border-b-8 border-[#FFD43F] px-1">Logika & Kode Robust.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 max-w-2xl leading-relaxed font-medium">
+                    Fokus pada <span class="font-bold underline decoration-[#FFD43F] decoration-4">Frontend Web Development</span>, pemrograman modular (C/Java), serta antusias terhadap administrasi sistem Linux.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-white border-2 border-[#1A1A1A] px-3 py-1 font-bold text-xs uppercase rounded-lg shadow-[2px_2px_0px_#1A1A1A]">
+                        <i class="fa-brands fa-linux mr-1"></i> Linux Environment
+                    </span>
+                    <span class="bg-white border-2 border-[#1A1A1A] px-3 py-1 font-bold text-xs uppercase rounded-lg shadow-[2px_2px_0px_#1A1A1A]">
+                        <i class="fa-solid fa-code mr-1"></i> Modular Programming
+                    </span>
+                </div>
+                <div class="flex items-center gap-4 pt-4">
+                    <a href="#projects" class="bg-[#FFD43F] text-[#1A1A1A] border-4 border-[#1A1A1A] font-extrabold text-md px-8 py-4 rounded-2xl shadow-[6px_6px_0px_#1A1A1A] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[4px_4px_0px_#1A1A1A] transition-all btn-press">
+                        LIHAT PROYEK <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" aria-label="Profil GitHub" class="bg-white border-4 border-[#1A1A1A] p-4 rounded-2xl shadow-[4px_4px_0px_#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-all btn-press">
+                        <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 relative flex justify-center">
+                <div class="absolute top-4 left-4 w-72 h-72 md:w-80 md:h-80 bg-[#FFD43F] border-4 border-[#1A1A1A] rounded-[2.5rem]"></div>
+                <div class="relative w-72 h-72 md:w-80 md:h-80 bg-white border-4 border-[#1A1A1A] p-4 rounded-[2.5rem] flex flex-col justify-between overflow-hidden">
+                    <div class="w-full h-40 bg-gray-50 border-2 border-[#1A1A1A] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-user-astronaut text-7xl text-gray-300"></i>
+                    </div>
+                    <div class="code-font text-[11px] p-3 bg-[#1A1A1A] text-green-400 rounded-xl leading-tight">
+                        <p class="text-gray-500">// Student.json</p>
+                        <p><span class="text-pink-400">"status"</span>: <span class="text-yellow-300">"Ready to Code"</span>,</p>
+                        <p><span class="text-pink-400">"focus"</span>: [<span class="text-yellow-300">"Web"</span>, <span class="text-yellow-300">"Systems"</span>]</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="bg-white border-4 border-[#1A1A1A] p-8 md:p-12 rounded-[2.5rem] shadow-[8px_8px_0px_#1A1A1A] relative overflow-hidden">
+                <div class="absolute top-4 right-4 opacity-[0.03] text-9xl pointer-events-none">
+                    <i class="fa-solid fa-terminal"></i>
+                </div>
+                <div class="max-w-3xl space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-extrabold flex items-center gap-3">
+                        <span class="bg-[#1A1A1A] text-white px-3 py-1 rounded-xl text-2xl">01</span> TENTANG SAYA
+                    </h2>
+                    <div class="space-y-4 text-gray-700 font-medium text-md md:text-lg leading-relaxed">
+                        <p>
+                            Halo! Saya adalah mahasiswa jurusan <span class="font-bold text-[#1A1A1A]">Informatika</span> yang memiliki minat besar dalam rekayasa perangkat lunak. Saya senang memecahkan masalah kompleks lewat baris kode dan menerjemahkannya ke dalam bentuk antarmuka digital yang interaktif.
+                        </p>
+                        <p>
+                            Melalui latar belakang akademis, saya memperkuat pemahaman fundamental ilmu komputer seperti struktur data dan pemrograman berorientasi objek (OOP). Di luar jam kuliah, saya aktif mengeksplorasi ekosistem pengembangan web modern serta melakukan manajemen server berbasis Linux.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="space-y-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold flex items-center gap-3">
+                <span class="bg-[#FFD43F] border-2 border-[#1A1A1A] px-3 py-1 rounded-xl text-2xl shadow-[2px_2px_0px_#1A1A1A]">02</span> SKILLSET TEKNIS
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <article class="bg-white border-4 border-[#1A1A1A] p-6 rounded-2xl shadow-[4px_4px_0px_#1A1A1A] hover:-translate-y-1 transition-transform">
+                    <h3 class="font-black text-lg mb-4 border-b-2 border-[#1A1A1A] pb-2 text-[#1A1A1A]">
+                        <i class="fa-solid fa-layer-group text-[#FFD43F] mr-2"></i>FRONTEND
+                    </h3>
+                    <ul class="space-y-2 font-bold text-sm text-gray-600">
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>HTML5 & CSS3</li>
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>JavaScript (ES6+)</li>
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>Tailwind CSS</li>
+                    </ul>
+                </article>
+                <article class="bg-white border-4 border-[#1A1A1A] p-6 rounded-2xl shadow-[4px_4px_0px_#1A1A1A] hover:-translate-y-1 transition-transform">
+                    <h3 class="font-black text-lg mb-4 border-b-2 border-[#1A1A1A] pb-2 text-[#1A1A1A]">
+                        <i class="fa-solid fa-code text-[#FFD43F] mr-2"></i>PROGRAMMING
+                    </h3>
+                    <ul class="space-y-2 font-bold text-sm text-gray-600">
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>Java</li>
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>C Language</li>
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>Python (Dasar)</li>
+                    </ul>
+                </article>
+                <article class="bg-white border-4 border-[#1A1A1A] p-6 rounded-2xl shadow-[4px_4px_0px_#1A1A1A] hover:-translate-y-1 transition-transform">
+                    <h3 class="font-black text-lg mb-4 border-b-2 border-[#1A1A1A] pb-2 text-[#1A1A1A]">
+                        <i class="fa-solid fa-terminal text-[#FFD43F] mr-2"></i>TOOLS & OS
+                    </h3>
+                    <ul class="space-y-2 font-bold text-sm text-gray-600">
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>Git & GitHub</li>
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>Linux Environment</li>
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>VS Code</li>
+                    </ul>
+                </article>
+                <article class="bg-white border-4 border-[#1A1A1A] p-6 rounded-2xl shadow-[4px_4px_0px_#1A1A1A] hover:-translate-y-1 transition-transform">
+                    <h3 class="font-black text-lg mb-4 border-b-2 border-[#1A1A1A] pb-2 text-[#1A1A1A]">
+                        <i class="fa-solid fa-database text-[#FFD43F] mr-2"></i>DATABASE
+                    </h3>
+                    <ul class="space-y-2 font-bold text-sm text-gray-600">
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>MySQL</li>
+                        <li><i class="fa-solid fa-square-check text-emerald-500 mr-2"></i>Figma (UI/UX)</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="space-y-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold flex items-center gap-3">
+                <span class="bg-[#1A1A1A] text-white px-3 py-1 rounded-xl text-2xl">03</span> PROYEK PILIHAN
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="project-card bg-white border-4 border-[#1A1A1A] rounded-[2rem] overflow-hidden shadow-[6px_6px_0px_#1A1A1A] flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 bg-gray-100 border-b-4 border-[#1A1A1A] relative flex items-center justify-center p-4">
+                            <i class="fa-solid fa-laptop-code text-7xl text-gray-300"></i>
+                            <span class="absolute top-4 left-4 bg-[#1A1A1A] text-white text-[10px] font-black px-3 py-1 uppercase rounded-full tracking-wider">
+                                CLI Application
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-black text-[#1A1A1A]">Modular Stock Management</h3>
+                            <p class="text-sm text-gray-600 font-medium">
+                                Aplikasi manajemen stok toko berbasis teks/CLI yang modular dibangun dengan Bahasa C. Fitur utama mencakup CRUD inventaris otomatis dan penanganan data langsung menggunakan file handling (.txt/.dat).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 space-y-4">
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-gray-100 border border-[#1A1A1A] text-[10px] font-bold px-2 py-0.5 rounded-md">C Language</span>
+                            <span class="bg-gray-100 border border-[#1A1A1A] text-[10px] font-bold px-2 py-0.5 rounded-md">File Handling</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="flex-1 text-center bg-[#1A1A1A] text-white font-bold py-2.5 rounded-xl border-2 border-[#1A1A1A] hover:bg-white hover:text-[#1A1A1A] text-sm transition-colors btn-press">
+                                <i class="fa-brands fa-github mr-1"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white border-4 border-[#1A1A1A] rounded-[2rem] overflow-hidden shadow-[6px_6px_0px_#1A1A1A] flex flex-col justify-between">
+                    <div>
+                        <div class="h-52 bg-[#FFD43F]/10 border-b-4 border-[#1A1A1A] relative flex items-center justify-center p-4">
+                            <i class="fa-solid fa-display text-7xl text-gray-300"></i>
+                            <span class="absolute top-4 left-4 bg-[#1A1A1A] text-white text-[10px] font-black px-3 py-1 uppercase rounded-full tracking-wider">
+                                Web Project
+                            </span>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-xl font-black text-[#1A1A1A]">StaySpace Portal</h3>
+                            <p class="text-sm text-gray-600 font-medium">
+                                Landing page & dashboard interaktif untuk portal rental properti. Berfokus pada layouting grid yang responsif, manajemen galeri foto hunian, serta penambahan widget pemesanan kamar yang interaktif.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 space-y-4">
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-gray-100 border border-[#1A1A1A] text-[10px] font-bold px-2 py-0.5 rounded-md">Tailwind CSS</span>
+                            <span class="bg-gray-100 border border-[#1A1A1A] text-[10px] font-bold px-2 py-0.5 rounded-md">HTML5</span>
+                            <span class="bg-gray-100 border border-[#1A1A1A] text-[10px] font-bold px-2 py-0.5 rounded-md">Anime.js</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="flex-1 text-center bg-[#1A1A1A] text-white font-bold py-2.5 rounded-xl border-2 border-[#1A1A1A] hover:bg-white hover:text-[#1A1A1A] text-sm transition-colors btn-press">
+                                <i class="fa-solid fa-rocket mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="flex-1 text-center bg-white text-[#1A1A1A] font-bold py-2.5 rounded-xl border-2 border-[#1A1A1A] hover:bg-gray-50 text-sm transition-colors btn-press">
+                                <i class="fa-brands fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="bg-[#FFD43F] border-4 border-[#1A1A1A] p-8 md:p-16 rounded-[2.5rem] shadow-[8px_8px_0px_#1A1A1A] text-center space-y-6">
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight">MARI BERKOLABORASI!</h2>
+                <p class="text-md md:text-lg max-w-xl mx-auto font-bold text-gray-800">
+                    Pintu digital saya selalu terbuka untuk proyek kolaboratif, magang, atau diskusi seputar dunia teknologi.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 pt-4">
+                    <a href="mailto:emailanda@domain.com" class="bg-[#1A1A1A] text-white font-bold px-6 py-3.5 rounded-xl border-2 border-[#1A1A1A] hover:bg-white hover:text-[#1A1A1A] transition-all shadow-[3px_3px_0px_rgba(0,0,0,0.3)] btn-press">
+                        <i class="fa-solid fa-envelope mr-2"></i> Kirim Email
+                    </a>
+                    <div class="flex gap-3">
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="bg-white border-2 border-[#1A1A1A] p-3.5 rounded-xl hover:bg-[#1A1A1A] hover:text-white transition-all shadow-[2px_2px_0px_#1A1A1A] btn-press">
+                            <i class="fa-brands fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub" class="bg-white border-2 border-[#1A1A1A] p-3.5 rounded-xl hover:bg-[#1A1A1A] hover:text-white transition-all shadow-[2px_2px_0px_#1A1A1A] btn-press">
+                            <i class="fa-brands fa-github text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t-4 border-[#1A1A1A] py-8 px-6 text-center font-bold text-sm text-gray-500">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 DEVPORTFOLIO. Didisain dengan Semangat Informatika 💛</p>
+            <a href="#" class="text-[#1A1A1A] hover:underline decoration-2 decoration-[#FFD43F]">Kembali ke atas <i class="fa-solid fa-arrow-up ml-1"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Efek Staggering Halus untuk Kartu Skill saat Pertama Kali Dimuat
+            anime({
+                targets: '#skills article',
+                translateY: [20, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(80),
+                duration: 800,
+                easing: 'easeOutQuad'
+            });
+
+            // Efek Pemunculan Kartu Proyek
+            anime({
+                targets: '.project-card',
+                scale: [0.97, 1],
+                opacity: [0, 1],
+                delay: anime.stagger(150),
+                duration: 900,
+                easing: 'easeOutCubic'
+            });
+        });
+    </script>
+</body>
+</html>
